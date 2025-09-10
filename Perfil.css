@@ -1,0 +1,76 @@
+body{
+    background-color: rgba(229, 230, 255, 0.785);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1{
+    background: rgba(114, 176, 191, 0.538);
+    margin: 0;
+    text-align: center; 
+    padding: 20px;
+    border-bottom: solid;
+    border-color: black;
+    
+
+}
+
+main{
+    display: flex;
+    background-color: rgb(217, 225, 241);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 100px;
+}
+
+section{
+    position: relative;
+    top: 10px;
+    background-color: rgba(216, 247, 255, 0.486);
+    margin-right: 20px;
+    border: 2px dotted;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 50px;
+    border-color: rgb(114, 176, 191);
+}
+
+section h4{
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+    text-decoration: 1px wavy rgb(103, 132, 191) underline;
+}
+
+section p{
+    position: relative;
+    background-color: rgba(176, 251, 255, 0.4);
+    padding: 7px;
+    left: -5px;
+    width: 100%;
+    font-size: small;
+    top: 10px;
+    border-left: 5px solid rgb(0, 82, 123);
+}
+
+aside{
+    background-color: rgb(255, 251, 240);
+    position: relative;
+    top: 10px;
+    left: 12%;
+    border: 2px dotted;
+    border-radius: 10px;
+    padding: 20px;
+    border-color: rgb(150, 148, 142);
+}
+
+aside h4{
+    margin: 0;
+    text-decoration: 1px wavy rgb(170, 170, 100) underline;
+    font-size: 22px;
+
+}
