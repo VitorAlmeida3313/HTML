@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="viagem.css">
+</head>
+<body>
+    <header>
+        <nav>
+                <ul>
+                    <li><a href="home.html">| Home |</a></li>
+                    <li><a href="destinos.html">Destinos |</a></li>
+                    <li><a href="dicas.html">Dicas |</a></li>
+                    <li><a href="contato.html">Contato |</a></li>
+                </ul>
+            </nav>
+        <div id="wrap">
+            <h1>Guia de Viagem</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="wrap">
+            <section>
+                <h2>Solicite um roteiro</h2>
+
+                <form action="enviar" method="post">
+
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+
+                        <label for="nome">Nome completo:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        <br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                        <br>
+
+                        <label for="pais">País de Origem:</label><br>
+                        <select name="pais" id="pais">
+                            <option value="brasil">Brasil</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="japao">Japão</option>
+                            <option value="peru">Peru</option>
+                            <option value="africa">África</option>
+                        </select>
+                    </fieldset> 
+
+                    <fieldset>
+                        <legend>Detalhes da Viagem</legend>
+
+                        <label for="data">Data prevista de viagem:</label><br>
+                        <input type="date" id="data" name="data" required>
+                        <br>
+
+                        <label for="num_viajantes">Quantos Viajantes?</label><br>
+                        <input type="number" id="pessoas" name="pessoas" min="1" max="12" required>
+                        <br><br>
+
+                        <label for="orcamento">Faixa de orçamento diário(R$):</label>
+                        <input type="range" id="orcamento" name="orcamento" min="100" max="1500" step="50">
+                        <span></span>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferências</legend>
+
+                        <p>Interesses</p>
+                        <input type="checkbox" id="natureza" name="interesses" value="natureza">
+                        <label for="natureza">Natureza</label>
+
+                        <input type="checkbox" id="gastronomia" name="interesses" value="gastronomia">
+                        <label for="gastronomia">Gastronomia</label>
+
+                        <input type="checkbox" id="museus" name="interesses" value="museus">
+                        <label for="museus">Museus</label>
+
+                        <input type="checkbox" id="aventura" name="interesses" value="aventura">
+                        <label for="aventura">Aventura</label>
+
+                        <input type="checkbox" id="praias" name="interesses" value="praias">
+                        <label for="praias">Praias</label>
+                        <br><br>
+
+                        <p>Preferências de acomodação:</p>
+                        <input type="radio" id="hostel" name="acomodacao" value="hostel">
+                        <label for="hostel">Hostel</label>
+
+                        <input type="radio" id="hotel" name="acomodacao" value="hotel">
+                        <label for="hotel">Hotel</label>
+
+                        <input type="radio" id="apartamento" name="acomodacao" value="apartamento">
+                        <label for="apartamento">Apartamento</label>
+                        <br><br>
+
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Eu Aceito os Termos</label>
+                        <br><br>
+
+                        <label for="mensagem">Mensagem adicional:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+                    </fieldset>
+
+                    <input type="submit" value="Enviar Formulário">
+                    <input type="reset" value="Limpar Formulário">
+                </form>
+
+                <p class="note">Prazo de resposta: entre 1 e 2 dias úteis após o envio do formulário.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
