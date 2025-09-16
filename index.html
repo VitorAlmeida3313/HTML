@@ -3,131 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    
-    <style>
-
-        body {
-            background: url("facens.jpeg") no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: #003366;
-        }
-
-        h1 {
-            text-align: center;
-            color: #003366;
-            margin-top: 20px;
-        }
-       
-        fieldset {
-            background-color: rgba(255, 255, 255, 0.85); 
-            border: 1px solid #0077CC; 
-            border-radius: 10px;
-            padding: 20px;
-            margin: 50px;
-        }
-
-        label {
-            font-weight: bold;
-            color: #003366;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        select {
-            width: 35%;
-            padding: 5px;
-            margin: 15px 0 15px 0;
-            border: 1px solid #0077CC;
-            border-radius: 10px;
-            background-color: #fff;
-        }
-
-        input:focus,
-        select:focus {
-            border-color: #28a745; 
-            outline: none;
-        }
-
-        button, input[type="submit"] {
-            background: linear-gradient(30deg, #019aff, #01254a);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 50px;
-            margin-top: 0px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        button:hover, input[type="submit"]:hover {
-            background: linear-gradient(30deg, #01254a, #015389);
-        }
-        
-        footer {
-            text-align: center;
-            font-size: 15px;
-            font-style: italic;
-            color: #000000;
-        }
-
-
-    </style>
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <header>
-        <h1 style="text-align: center;">Cadastro de Sobrevivente Universitário</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">| Home |</a></li>
+                <li><a href="curriculo.html">Currículo |</a></li>
+                <li><a href="projeto.html">| Projeto |</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>Vitor Augusto de Almeida</h1>
+            <p class="destaque">Bem-vindo ao meu portfólio</p>
+        </div>
     </header>
 
     <main>
-        <form action="/enviar" method="post" enctype="multipart/form-data"></form>
-            <fieldset>
-                <legend>
-                    <p><h4>Dados Pessoais</h4></p>
-                </legend>
-                
+        <div>
+            <section class="sessao_principal">
+                <h2>Meus Interesses</h2>
+                <ul>
+                    <li>Desenvolvimento Backend</li><br>
+                    <li>UI/UX Design</li><br>
+                    <li>Banco de Dados</li><br> 
+                </ul>
+            </section>
 
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
-
-                <label for="Curso">Curso:</label><br>
-                <input type="text" name="Curso" id="Curso" placeholder="Digite o nome do seu curso"><br><br><hr>
-
-                <label for="Periodo">Qual o seu semestre?</label><br>
-                <select name="Periodo" id="Periodo">
-                    <option value="" selected disabled hidden></option>
-                    <option value="1º Semestre">1º Semestre</option>
-                    <option value="2º Semestre">2º Semestre</option>
-                    <option value="3º Semestre">3º Semestre</option>
-                    <option value="4º Semestre">4º Semestre</option>
-                    <option value="5º Semestre">5º Semestre</option>
-                    <option value="6º Semestre">6º Semestre</option>
-                    <option value="7º Semestre">7º Semestre</option>
-                    <option value="8º Semestre">8º Semestre</option>
-                </select><br><br>   
-                
-                <label>Está pronto para a sobrevivência?</label><br>
-                <input type="radio" name="Está pronto?" id="sim" value="sim">
-                <label for="sim">Sim</label><br>    
-                <input type="radio" name="Está pronto?" id="nao" value="nao">
-                <label for="nao">Não</label><br><hr>
-
-                <label for="meme">Upload de Meme(PDF ou Imagem)</label><br><br>
-                <input type="file" name="meme" id="meme" accept=".pdf, image/*"><br><br>
-            </fieldset>
-
-            <br><input id="Enviar" type="submit" value="Enviar Formulário">
-        </form>
+        </div>
     </main>
 
     <footer>
-        <br><br><p><h5>&copy;2025 - <em>Prometemos não enviar só spam... talvez memes e cupom de miojo.</em></h5></p>
+        <div id="cabecalho_index">
+            <p>&copy; 2025 Vitor Augusto de Almeida - Todos os Direitos Reservados</p>
+        </div>
     </footer>
 </body>
 </html>
