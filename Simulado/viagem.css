@@ -115,7 +115,7 @@ legend{
 } 
 
 label{
-    display: inline-block; 
+    display: inline-table; 
     min-width: 180px; 
     margin: 6px 0;
 } 

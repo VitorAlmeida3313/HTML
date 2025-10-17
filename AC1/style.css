@@ -2,14 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #eff5ff;
 }
 
 header {
-    background: #35424a;
+    background: linear-gradient(0deg, #7997ea, #74c9fa);
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 45px;
 }
 
 nav ul {
@@ -116,9 +121,10 @@ th, td {
 .info {
     font-size: 16px;
     color: #444;
-    background-color: #f0f0f0;
+    background-color: #d1e8f8;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 2px dashed;
 }
 
 #cabecalho {
@@ -152,4 +158,18 @@ p a{
 
 section{
     margin: 20px;
+}
+
+fieldset{
+    background-color: #d7ebfb;
+    border: 1px solid #8ca5f6;
+}
+
+legend{
+    color: #1f7be3;
+    font-weight: bold;
+}
+
+h2,h3,h4{
+    color: #08376c;
 }
