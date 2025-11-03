@@ -15,19 +15,17 @@ botao.addEventListener("click", () =>{
         item.classList.toggle("destacado");
 
         if (item.classList.contains("destacado")) {
-            // Se tiver, aplicamos o estilo
+
             item.style.background = "black";
             item.style.color = "white";
+            
         } else {
-            // Se não tiver (porque o toggle a removeu no segundo clique),
-            // resetamos o estilo para o padrão.
-            item.style.background = ""; // Volta ao background padrão
-            item.style.color = "";      // Volta à cor de texto padrão
+          
+            item.style.background = ""; 
+            item.style.color = "";      
         }
-        
+
     })
 
     
 })
-
-

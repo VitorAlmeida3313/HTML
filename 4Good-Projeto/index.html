@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGestão - Gestão de Impacto Ambiental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">🌱 EcoGestão</div>
+    <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#energia">Energia</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Gestão Inteligente de Energia Renovável</h1>
+        <p>Monitore e otimize o consumo de energia da sua empresa de forma simples e eficaz</p>
+        <button class="btn" onclick="scrollToSection('calculadora')">Começar Agora</button>
+    </div>
+    <img src="hero-energy.jpeg" alt="Energia Renovável" class="hero-image">
+</section>
+
+<section id="beneficios" class="beneficios">
+    <h2>Benefícios Comprovados</h2>
+    <div class="beneficios-grid">
+        <div class="beneficio-card">
+            <h3>💰 Redução de Custos</h3>
+            <p>Até 25% de economia em custos de energia elétrica</p>
+        </div>
+        <div class="beneficio-card">
+            <h3>🌍 Impacto Ambiental</h3>
+            <p>Redução de 100.000 toneladas de CO₂ em projetos de energia renovável</p>
+        </div>
+        <div class="beneficio-card">
+            <h3>📈 ROI Rápido</h3>
+            <p>Retorno sobre investimento em aproximadamente 10 meses</p>
+        </div>
+        <div class="beneficio-card">
+            <h3>✨ Imagem Institucional</h3>
+            <p>Melhora a reputação da empresa junto a clientes e investidores</p>
+        </div>
+    </div>
+</section>
+
+<section id="energia" class="energia">
+    <h2>Fontes de Energia Monitoradas</h2>
+    <div class="energia-grid">
+        <div class="energia-card">
+            <h3>☀️ Energia Solar</h3>
+            <p>Monitore painéis fotovoltaicos e a geração de energia solar</p>
+        </div>
+        <div class="energia-card">
+            <h3>💨 Energia Eólica</h3>
+            <p>Acompanhe turbinas eólicas e a velocidade do vento</p>
+        </div>
+        <div class="energia-card">
+            <h3>💧 Energia Hídrica</h3>
+            <p>Gestão de sistemas hidrelétricos e recursos hídricos</p>
+        </div>
+    </div>
+</section>
+
+<section id="calculadora" class="calculadora">
+    <h2>Calculadora de ROI</h2>
+    <p>Calcule o retorno sobre seu investimento em energia renovável</p>
+
+    <div class="calculadora-content">
+        <div class="calculadora-inputs">
+            <label>Investimento Inicial (R$)
+                <input type="number" id="investimento" value="200000">
+            </label>
+            <label>Economia Mensal (R$)
+                <input type="number" id="economia" value="20000">
+            </label>
+            <label>Consumo Mensal (kWh)
+                <input type="number" id="consumo" value="5000">
+            </label>
+        </div>
+
+        <div class="calculadora-resultado">
+            <h3>Resultado da Simulação</h3>
+            <p>Meses para ROI: <span id="meses-roi">10</span></p>
+            <p>Economia Anual: <span id="economia-anual">R$ 240.000</span></p>
+            <p>Redução de CO₂: <span id="reducao-co2">2.500 kg</span></p>
+
+            <div class="grafico-simples">
+                <h4>Projeção de Retorno (12 meses)</h4>
+                <div class="grafico-barras">
+                    <div class="barra" style="height:8%">1</div>
+                    <div class="barra" style="height:17%">2</div>
+                    <div class="barra" style="height:25%">3</div>
+                    <div class="barra" style="height:33%">4</div>
+                    <div class="barra" style="height:42%">5</div>
+                    <div class="barra" style="height:50%">6</div>
+                    <div class="barra" style="height:58%">7</div>
+                    <div class="barra" style="height:67%">8</div>
+                    <div class="barra" style="height:75%">9</div>
+                    <div class="barra" style="height:83%">10</div>
+                    <div class="barra" style="height:92%">11</div>
+                    <div class="barra" style="height:100%">12</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <form onsubmit="enviarFormulario(event)">
+        <input type="text" placeholder="Seu Nome" required>
+        <input type="email" placeholder="Seu Email" required>
+        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div>
+            <h3>Sobre o Projeto</h3>
+            <p>Plataforma de Gestão de Impacto Ambiental desenvolvida para monitorar e otimizar o consumo de energia renovável.</p>
+        </div>
+        <div>
+            <h3>Equipe</h3>
+            <ul>
+                <li>Rodrigo C. Castro Junior</li>
+                <li>Rodrigo Lima</li>
+                <li>Vitor Almeida</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Instituição</h3>
+            <p>Centro Universitário Facens<br>Sorocaba/SP - 2025<br>Orientadora: Prof. Daniela Costa de Sena</p>
+        </div>
+    </div>
+    <p>&copy; 2025 Plataforma de Gestão de Impacto Ambiental - UPX 3</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
