@@ -25,11 +25,7 @@ body {
     background: #fff;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 
 /* Header */
 .header {
@@ -42,13 +38,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 15px;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: var(--primary);
+    color: var(--dark);
 }
 
 .nav {
@@ -69,11 +65,10 @@ body {
 
 /* Hero */
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
-    padding: 80px 0;
+    text-align: center;
+    padding: 80px 80px;
     background: linear-gradient(135deg, rgba(45,157,120,0.05), rgba(74,159,181,0.05));
 }
 
@@ -108,6 +103,7 @@ body {
     display: inline-block;
     background: var(--primary);
     color: #fff;
+
 }
 
 .btn:hover {
@@ -137,6 +133,7 @@ p {
 /* Benefícios */
 .beneficios {
     background: var(--light);
+    padding: 20px;
 }
 
 .beneficios-grid {
@@ -173,6 +170,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap: 30px;
+    padding: 20px;
 }
 
 .energia-card {
@@ -235,9 +233,9 @@ input:focus, textarea:focus {
 .resultado-item {
     background: var(--accent);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
-    border-left: 4px solid var(--primary);
+    border: 1.5px solid var(--primary);
 }
 
 .resultado-item span {
@@ -246,9 +244,10 @@ input:focus, textarea:focus {
 
 .resultado-label {
     font-size: 12px;
-    color: #666;
+    color: #333333;
     text-transform: uppercase;
     margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .resultado-valor {
@@ -269,28 +268,14 @@ input:focus, textarea:focus {
 .barra {
     flex: 1;
     border-radius: 8px 8px 0 0;
-    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
     transition: var(--transition);
     cursor: pointer;
 }
 
 .barra:hover {
-    opacity: 0.8;
-    transform: scaleY(1.05);
-}
-
-/* Contato */
-.formulario {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-}
-
-.formulario .btn {
-    width: 100%;
+    opacity: 0.9;
+    transform: scaleY(1.10);
 }
 
 /* Footer */
@@ -319,12 +304,38 @@ input:focus, textarea:focus {
     line-height: 1.6;
 }
 
+.footer ul li{
+    list-style: none;
+}
+
+.footer a{
+    color: #ccc;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.linkedin-icon {
+    width: 20px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .hero { grid-template-columns: 1fr; padding: 50px 0; }
     h2 { font-size: 28px; }
     .beneficios-grid, .energia-grid { grid-template-columns: 1fr; }
     .calculadora-content { grid-template-columns: 1fr; }
+    .header{
+        text-align: center;
+        flex-direction: column;
+    }
+    .header .nav{
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -332,4 +343,9 @@ input:focus, textarea:focus {
     h2 { font-size: 22px; margin-bottom: 30px; }
     .hero h1 { font-size: 24px; }
     section { padding: 40px 0; }
+    .logo{
+        text-align: center;
+        justify-content: center;
+    }
+
 }

@@ -1,4 +1,3 @@
-
 function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -8,20 +7,16 @@ function scrollToSection(sectionId) {
 
 
 document.getElementById('investimento').addEventListener('input', function() {
-    const valor = parseFloat(this.value);
-    document.getElementById('investimento-display').textContent = 'R$ ' + valor.toLocaleString('pt-BR');
+
     calcularROI();
 });
 
 document.getElementById('economia').addEventListener('input', function() {
-    const valor = parseFloat(this.value);
-    document.getElementById('economia-display').textContent = 'R$ ' + valor.toLocaleString('pt-BR');
+  
     calcularROI();
 });
 
 document.getElementById('consumo').addEventListener('input', function() {
-    const valor = parseFloat(this.value);
-    document.getElementById('consumo-display').textContent = valor.toLocaleString('pt-BR') + ' kWh';
     calcularROI();
 });
 
@@ -46,20 +41,6 @@ function calcularROI() {
    
     atualizarGrafico(mesesROI);
 }
-
-
-function atualizarGrafico(mesesROI) {
-    const barras = document.querySelectorAll('.barra');
-    barras.forEach((barra, index) => {
-        const mes = index + 1;
-        if (mes <= mesesROI) {
-            barra.style.background = 'linear-gradient(180deg, #2d9d78 0%, #4a9fb5 100%)';
-        } else {
-            barra.style.background = '#e0e0e0';
-        }
-    });
-}
-
 
 function enviarFormulario(event) {
     event.preventDefault();
